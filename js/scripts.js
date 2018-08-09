@@ -12,6 +12,7 @@ $('.filter-button-group').on('click', 'button', function(){
 	$grid.isotope({filter: filterValue});
 	})
 }
+/*= меняем дефолтные значения, указанные в документации скрипта карусели на свои значения =*/
 function carousel_init() {
 	$(".owl-carousel").owlCarousel({
 		items: 1,
@@ -20,7 +21,36 @@ function carousel_init() {
 	});
 }
 
+function to_top(){
+	var btn = $('.totop-button');
+	$(window).scroll(function(){
+		if ($(window).scrollTop() > 300){
+			btn.addClass('show');
+		}
+		else{
+			btn.removeClass('show');
+		}
+	});
+	
+	btn.on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	});
+}
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
  $(document).ready(function(){
 		isotope_init();
 		carousel_init();
+	 	to_top();
  });
