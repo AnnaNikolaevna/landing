@@ -12,7 +12,9 @@
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Font et-line -->
 	<link rel="stylesheet" href="css/et-line.css">
 
@@ -104,8 +106,8 @@
 
 			<!--  standart-center start -->
 			<section class="standart-section section-center">
-				<div class="container">
-					<h2 class="text-center">Services</h2>
+				<div class="container text-center">
+					<h2>Services</h2>
 					<div class="row">
 						<div class="col-5">
 							<div class="text-center">
@@ -266,7 +268,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section bg-dark>
 			<!--benefit end-->
 
 			<!--		section-2	owl-carousel start -->
@@ -309,62 +311,121 @@
 					</div>
 				</div>
 			</section>
-			<!--		section-dark	owl-carousel end -->
-			<sectiion>
-				<div id="map"></div>
-			</sectiion>
+<!--		section-dark	owl-carousel end -->
+
+			<section class="standart-section section-news">
+				
+			</section>
+				<!-- /.standart-section section-news -->
+		 
+				<!--			section-41-82 start-->
+				<section class="section-41-82 bg-light text-center">
+					<h2>Stay informed with our newsletter</h2>
+					<input type="email" placeholder="enter email here" class="mx-auto">
+					<button class="btn btn-invert mx-auto">Subscribe</button>
+					<div class="info"><i class="fas fa-info-circle"></i>
+						<p>Please trust us, we will never send you spam</p>
+					</div>
+				</section>
+				<!--			section-41-82 end-->
+
+				<!-- section contact start-->
+				<section class="standart-section contact">
+					<div class="container text-center">
+						<h2>Contact</h2>
+						<div class="row">
+							<div class="col-8 mx-auto">
+								<div>
+									<dl>
+										<dt>Call us</dt>
+										<dd><a href="tel:+61383766284" target="_blank">+61 3 8376 6284</a></dd>
+									</dl>
+									<dl>
+										<dt>Address</dt>
+										<dd>245 Quigley Blvd, Ste K</dd>
+									</dl>
+									<dl>
+										<dt>Email</dt>
+										<dd><a href="mailto:support@bestlooker.pro" target="_blank">support@bestlooker.pro</a></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<form action="#">	
+							<row>	
+								<col-6>	
+									<input type="text" placeholder="name">
+									<input type="email" placeholder="email" class="mx-auto">
+								</col-6>
+								<col-6>	
+								<textarea name="message">Message</textarea>
+								</col-6>		
+							</row>	
+							<row>	
+								<col-6>
+									<div class="info">
+										<i class="fas fa-info-circle"></i>
+									</div>
+										<p>All the fields are required</p>
+								</col-6>
+								<col-6>
+									<button class="btn btn-invert mx-auto">Subscribe Message</button>
+								</col-6>
+							</row>
+						</form>	
+					</div><!-- container end -->
+				</section>
+<!-- section contact end-->
+
+<!--        section-map start  -->
+	<section class="map-section">
+		<div id="map"></div>
+		<div class="map-overlay text-center invert">
+			<div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+			<h3 class="map-title">Open the map</h3>
+			<i class="fas fa-angle-down"></i>
+		</div>
+	</section>
+<!--      section-map end-->
 		</main>
 		<!-- /main end-->
 
-<!--
-		<footer>
-			<div class="text-center">
-				<a href="index.html" class="mx-auto"><img src="img/logo-ftr.png" alt="logo-page"></a>
-				<div class="social-icon">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-				</div>
-				<div class="social-icon">
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				</div>
-				<div class="social-icon">
-					<a href="#"><i class="fab fa-behance"></i></a>
-				</div>
-				<div class="social-icon">
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-				<div class="social-icon">
-					<a href="#"><i class="fab fa-pinterest-p"></i></a>
-				</div>
-			</div>
-			<div class="copywriting">
-				<span>&copy; Rhythm 2014</span>
-				<span>Made with love for great people</span>
-			</div>
+		<!--footer start-->
+<footer class="bg-light">
+	<div class="text-center">
+		<a href="index.html" class="bg-logo-ftr mx-auto"></a>
+		<ul>
+			<li><a href="#" class="footer-icon bg-facebook"></a></li>
+			<li><a href="#" class="footer-icon bg-twitter"></a></li>
+			<li><a href="#" class="footer-icon bg-behance"></a></li>
+			<li><a href="#" class="footer-icon bg-linkedin"></a></li>
+			<li><a href="#" class="footer-icon bg-pinterest"></a></li>
+		</ul>
+		<div class="copywriting">
+			<span>&copy; Rhythm 2014</span>
+			<span>Made with love for great people</span>
+		</div>
 	</div>
-	</footer>
--->
+</footer>
+</div>
+<!-- /.page -->
 
-	</div>
-	<!-- /.page -->
+<!-- totop-button start -->
+<div class="totop-button"></div>
+<!-- /.totop-button -->
+<!--    jquery  -->
+<script src="js/jquery-3.3.1.min.js"></script>
 
-	<div class="totop-button"></div>
-	<!-- /.totop-button -->
-	<!--    jquery  -->
-	<script src="js/jquery-3.3.1.min.js"></script>
+<!--  isotope  -->
+<script src="js/isotope.pkgd.min.js"></script>
 
-	<!--  isotope  -->
-	<script src="js/isotope.pkgd.min.js"></script>
+<!-- owl-carousel -->
+<script src="js/owl.carousel.min.js"></script>
 
-	<!-- owl-carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-
-	<!--	google map-->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5yYXZBdGvkYh3ZHicp5pWgN1JADPAvpM=initMap">
-
-
-	</script>
-	<!-- site scripts-->
-	<script src="js/scripts.js"></script>
+<!--	google map-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgjTADDAQ89PxfTQ5CPF39IQunpFut7D0&callback=initMap">
+</script>
+<!-- site scripts-->
+<script src="js/scripts.js"></script>
 </body>
-
 </html>
